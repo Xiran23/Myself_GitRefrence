@@ -1,0 +1,360 @@
+# GIT IN ONE VIDEO
+
+press i 
+
+:WQ to quit 
+
+SET **email and user name**
+git config --global [user.name](http://user.name/) 
+press i 
+
+:WQ to quit 
+
+SET **email and user name**
+git config --global [user.name](http://user.name/) 
+
+$git config --global user.email [Useremail@gmail.com](mailto:useremail23@gmail.com)
+
+**. View  email and user name**
+git config --global [user.name](http://user.name/) 
+
+$git config --global user.email [)
+
+**Initialize the git** 
+
+ 1   git init 
+
+1. ls -lart  (shows the hidden folder tooo )
+2. git status //shows the status 
+3. 
+
+```
+git status
+  untrack 
+  unmodified
+  moified 
+  staged 
+
+   
+
+```
+
+4 . git add (file name ) 
+
+To commit all changes at once, you can use `git commit -a -m "commit message"`. This will automatically stage and commit all changes made to tracked files since the last commit. Alternatively, you can use `git add .` to stage all changes made to tracked files in the current directory and its subdirectories, and then commit using `git commit -m "commit message"`.
+
+5 . git commit
+
+**Commit the changes**
+
+After staging the changes, you can commit them using:
+
+```
+git commit -m "commit message"
+
+```
+
+This will create a new commit with the changes you have staged. The commit message should be a brief description of the changes you made.
+
+6 . touch 
+
+creates a empty file 
+
+1. git add -A 
+
+     adds all file at once 
+
+```
+git commit -m "commit message"
+
+```
+
+8 .git checkout (file.name)
+
+recover  if all file is lost 
+
+git checkout -f
+
+9 git log 
+
+shows commit
+
+git log -p -5 
+
+10 . git diff (WORKING TREE TO stage area ) 
+
+git diff  - - staged (STAGE WITH LAST COMMITE)
+
+git checkout -f
+
+11 . git commit -a -m “SKIpped staging area’ 
+
+need to run git add -A once 
+
+1. git rm (remove from working stage ,directory)
+2. git rm  - - cached (removes from staging area )  
+3. 
+
+[git ignore](EnglishClub.com)
+
+1. create a file 
+2. touch .getignore
+
+write file name in it like log.txt 
+
+/mylog
+
+*.log
+
+*.html
+
+*.cpp
+
+ignore direcoty 
+
+foldername
+
+ctrl + S 
+
+branches 
+
+git branch feautre1; 
+
+git branch 
+
+git checkout feature1
+
+merge 
+
+git add  -A 
+
+git commit  -m 
+
+git checkout master 
+
+git merge feature1
+
+creates a new brances and direct u there 
+
+git checkout -b branchfilename2 
+
+# GIT IN ONE VIDEO
+
+## Basic Git Commands and Concepts
+
+### Configuring Git
+
+Set your user name and email:
+
+```bash
+git config --global user.name "user"
+git config --global user.email "user23!@.com"
+
+```
+
+View your user name and email:
+
+```bash
+git config --global user.name
+git config --global user.email
+
+```
+
+### Initializing a Repository
+
+Initialize a new Git repository:
+
+```bash
+git init
+
+```
+
+### Basic File Operations
+
+List files, including hidden ones:
+
+```bash
+ls -lart
+
+```
+
+Check the status of your repository:
+
+```bash
+git status
+
+```
+
+### Staging and Committing Changes
+
+Stage a specific file:
+
+```bash
+git add <file_name>
+
+```
+
+Stage all changes:
+
+```bash
+git add -A
+
+```
+
+Commit staged changes with a message:
+
+```bash
+git commit -m "commit message"
+
+```
+
+Commit all changes at once (staging and committing):
+
+```bash
+git commit -a -m "commit message"
+
+```
+
+### Checking Status and Logs
+
+Show the commit logs:
+
+```bash
+git log
+
+```
+
+Show the last 5 commits with patches:
+
+```bash
+git log -p -5
+
+```
+
+### Viewing Differences
+
+View differences between working directory and staging area:
+
+```bash
+git diff
+
+```
+
+View differences between staging area and the last commit:
+
+```bash
+git diff --staged
+
+```
+
+### Recovering Files
+
+Recover a specific file:
+
+```bash
+git checkout <file_name>
+
+```
+
+Forcefully recover all files:
+
+```bash
+git checkout -f
+
+```
+
+### Removing Files
+
+Remove a file from the working directory and staging area:
+
+```bash
+git rm <file_name>
+
+```
+
+Remove a file only from the staging area:
+
+```bash
+git rm --cached <file_name>
+
+```
+
+### Ignoring Files
+
+Create a `.gitignore` file:
+
+```bash
+touch .gitignore
+
+```
+
+Add files or patterns to ignore:
+
+```
+log.txt
+/mylog
+*.log
+*.html
+*.cpp
+foldername/
+
+```
+
+### Working with Branches
+
+Create a new branch:
+
+```bash
+git branch <branch_name>
+
+```
+
+Check out (switch to) a branch:
+
+```bash
+git checkout <branch_name>
+
+```
+
+Create and switch to a new branch:
+
+```bash
+git checkout -b <branch_name>
+
+```
+
+### Merging Branches
+
+Merge changes from another branch into the current branch:
+
+```bash
+git merge <branch_name>
+
+```
+
+Typical workflow for merging:
+
+1. Make changes and commit on `feature1` branch:
+    
+    ```bash
+    git add -A
+    git commit -m "commit message"
+    
+    ```
+    
+2. Switch back to the master branch:
+    
+    ```bash
+    git checkout master
+    
+    ```
+    
+3. Merge `feature1` branch into `master`:
+    
+    ```bash
+    git merge feature1
+    
+    ```
+    
+
+This summary covers the essential Git commands and workflows for managing a Git repository.
