@@ -8,8 +8,8 @@
 Set your user name and email:
 
 ```bash
-git config --global user.name "chiran"
-git config --global user.email "thapachiran23@gmail.com"
+git config --global user.name "URSELF_NAME"
+git config --global user.email "URSELF#4@gmail.com"
 
 ```
 
